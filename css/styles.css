@@ -152,6 +152,25 @@ border-bottom: 1px solid #ECECEC;
     text-decoration: none;
 }
 
+
+/* Подчёркивание */
+
+.nav-item-studio {
+    position: relative;
+    color: #2196F3;
+}
+
+.nav-item-studio::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+}
+
 .nav-item:hover,
 .nav-item:focus {
     color: var(--logo-blue-txt-cl);
@@ -633,6 +652,24 @@ margin-left: 70px;
     margin: 0 auto;
 }
 
+/* Псевдо портфолио */
+.nav-item-portfolio {
+    position: relative;
+    color: #2196F3;
+}
+.nav-item-portfolio::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+}
+
+
+
 
 .contacts-link-portfolio {
     margin-right: 50px;
@@ -860,7 +897,11 @@ color: var(--logo-blue-txt-cl);
     background-color: transparent;
     cursor: pointer;
     
+    
 }
+/* .button-close-modal{
+     position: fixed; 
+} */
 
 
 /* .svg-close-modal {
